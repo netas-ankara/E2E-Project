@@ -1,0 +1,1 @@
+call protractor protractor.conf.js --suite=test
