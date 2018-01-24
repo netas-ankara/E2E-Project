@@ -206,20 +206,20 @@ module.exports = function () {
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodeMailer.createTransport({
-            host: 'Netcas00.netas.com.tr',
+            host: 'your host',
             port: 25,
             secure: false,
             auth: {
-                user: 'Trnetas\\aydesteammail',
-                pass: 'Netas201777'
+                user: 'your user name',
+                pass: 'password'
             },
             ignoreTLS: true
         });
 
         // setup email data with unicode symbols
         let mailOptions = {
-            from: '"AYDES NETAS DEVELOPMENT 👻" <aydesteammail@netas.com.tr>', // sender address
-            to: 'TEAM-AYDES@NETAS.com.tr', // list of receivers
+            from: '"AYDES NETAS DEVELOPMENT 👻" <from-mail>', // sender address
+            to: 'To-mail', // list of receivers
             subject: `E2E Test Raporu ${reportName} 👻` // Subject line
         };
 
